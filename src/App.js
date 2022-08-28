@@ -1,11 +1,9 @@
 import {useSelector, useDispatch} from "react-redux";
 import {decrement} from "./ReducerStore/counterActions";
 import {increment} from "./ReducerStore/counterActions";
-import {RootReducer} from "./ReducerStore/RootReducer";
-
-
 
 function App() {
+
 
   const selector = useSelector((s)=>s.counter)
   const dispatch = useDispatch();
